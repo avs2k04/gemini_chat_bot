@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -28,15 +25,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -50,19 +41,47 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBi3MELT3u4yY14uTVCYO1vDpm9PkLX_-g',
-    appId: '1:212640563016:android:d48810093ff1a32667bd7d',
-    messagingSenderId: '212640563016',
-    projectId: 'gemini-chat-bot-ad296',
-    storageBucket: 'gemini-chat-bot-ad296.appspot.com',
+    apiKey: 'AIzaSyCs9Eoo28yHJOsMLDcv4IAOr0mHf3rsgBg',
+    appId: '1:795317250647:android:6c2718e8d421c610489112',
+    messagingSenderId: '795317250647',
+    projectId: 'gita-ai-5cdf6',
+    storageBucket: 'gita-ai-5cdf6.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDfBIF9q3SnsBMJ_uFHcCMDa1_7F8aseVM',
-    appId: '1:212640563016:ios:6866e72489678a3567bd7d',
-    messagingSenderId: '212640563016',
-    projectId: 'gemini-chat-bot-ad296',
-    storageBucket: 'gemini-chat-bot-ad296.appspot.com',
+    apiKey: 'AIzaSyANIW2XvAlQcbz1Hpj4hCrPjOravgueL00',
+    appId: '1:795317250647:ios:f2fc0e055403e764489112',
+    messagingSenderId: '795317250647',
+    projectId: 'gita-ai-5cdf6',
+    storageBucket: 'gita-ai-5cdf6.appspot.com',
     iosBundleId: 'com.example.geminiChatBot',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyCrqJXuBUoVO5dpxwbI1DmtndXF9ST-xSA',
+    appId: '1:795317250647:web:0955ff1ba8406f9e489112',
+    messagingSenderId: '795317250647',
+    projectId: 'gita-ai-5cdf6',
+    authDomain: 'gita-ai-5cdf6.firebaseapp.com',
+    storageBucket: 'gita-ai-5cdf6.appspot.com',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyANIW2XvAlQcbz1Hpj4hCrPjOravgueL00',
+    appId: '1:795317250647:ios:f2fc0e055403e764489112',
+    messagingSenderId: '795317250647',
+    projectId: 'gita-ai-5cdf6',
+    storageBucket: 'gita-ai-5cdf6.appspot.com',
+    iosBundleId: 'com.example.geminiChatBot',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyCrqJXuBUoVO5dpxwbI1DmtndXF9ST-xSA',
+    appId: '1:795317250647:web:df81bf9eab1abd9e489112',
+    messagingSenderId: '795317250647',
+    projectId: 'gita-ai-5cdf6',
+    authDomain: 'gita-ai-5cdf6.firebaseapp.com',
+    storageBucket: 'gita-ai-5cdf6.appspot.com',
+  );
+
 }

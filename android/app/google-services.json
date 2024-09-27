@@ -1,43 +1,26 @@
 {
   "project_info": {
-    "project_number": "212640563016",
-    "project_id": "gemini-chat-bot-ad296",
-    "storage_bucket": "gemini-chat-bot-ad296.appspot.com"
+    "project_number": "795317250647",
+    "project_id": "gita-ai-5cdf6",
+    "storage_bucket": "gita-ai-5cdf6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:212640563016:android:d48810093ff1a32667bd7d",
+        "mobilesdk_app_id": "1:795317250647:android:6c2718e8d421c610489112",
         "android_client_info": {
           "package_name": "com.example.gemini_chat_bot"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "212640563016-vh3qm1vhve15opdm70bbmq1vlk9f0891.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBi3MELT3u4yY14uTVCYO1vDpm9PkLX_-g"
+          "current_key": "AIzaSyCs9Eoo28yHJOsMLDcv4IAOr0mHf3rsgBg"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "212640563016-vh3qm1vhve15opdm70bbmq1vlk9f0891.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "212640563016-eledg19b7lchhlsvmatjskntg52c2aeg.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.geminiChatBot"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
